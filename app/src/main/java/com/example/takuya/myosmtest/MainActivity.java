@@ -100,15 +100,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         /**
-         * ECS office
+         *
          */
         private void button1(){
             //TODO: set lat long to map
             MapView map = (MapView) findViewById(R.id.map);
             IMapController mapController = map.getController();
-            //34.989155 137.005537
-            GeoPoint startPoint = new GeoPoint(34.989155,137.005537);
-            mapController.setZoom(18);
+            //Royal Observatory, Greenwich
+            // geo:51.4778,-0.0014
+            GeoPoint startPoint = new GeoPoint(51.4778, -0.0014);
+            mapController.setZoom(15);
             mapController.setCenter(startPoint);
 
         }
