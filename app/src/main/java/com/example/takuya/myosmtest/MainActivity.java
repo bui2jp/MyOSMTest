@@ -103,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
          * ECS office
          */
         private void button1(){
+            //TODO: set lat long to map
             MapView map = (MapView) findViewById(R.id.map);
             IMapController mapController = map.getController();
             //34.989155 137.005537
